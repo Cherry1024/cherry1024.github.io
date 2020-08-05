@@ -61,7 +61,7 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 1243ce64989790bcb342                           #生成的clientID
   clientSecret: 8ad431e77ae7b2001fb200ee01f11a0cf4bcf4e7    #生成的clientSecret
-  repo:  cherry1024.github.io    #仓库名称
+  repo:  cherryBlog.github.io    #仓库名称
   owner: Cherry1024   #github用户名，和repo组成仓库
   admin: Cherry1024
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
