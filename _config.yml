@@ -1,7 +1,7 @@
 # Site settings
 title: CY Blog
 SEOTitle: 樱桃小屋
-header-img: img/post-bg-desk.jpg
+header-img:  img/post-bg-rabbit.jpg
 email: 826284647@qq.com
 description: "Just do what you want to do!"
 keyword: "CY, CY Blog, Cherry, CS, Deep Learning, Federated Learning"
@@ -11,9 +11,8 @@ github_repo: "https://github.com/Cherry1024/cherry1024.github.io.git" # you code
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Those things that hurt instruct"
-sidebar-avatar: /img/mypic.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
+sidebar-about-description: "I am a slow walker, but i never walk backwards."
+sidebar-avatar: /img/mypic.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 # SNS settings
@@ -30,6 +29,7 @@ github_username:    cherry1024
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
@@ -42,8 +42,6 @@ anchorjs: true                          # if you want to customize anchor. check
 gems: [jekyll-paginate]
 
 
-
-
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
@@ -54,10 +52,9 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 
-
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: cherry1024
+disqus_username: cherry1024
 
 # Gitalk
 # gitalk:
@@ -77,11 +74,8 @@ kramdown:
 # ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-# ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-# ga_domain: cherry1024.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
-
-
-
+ga_track_id: 'UA-174594305-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto               # 默认的是 auto, 如果没有自己的域名，需要改成auto
 
 
 # Featured Tags
