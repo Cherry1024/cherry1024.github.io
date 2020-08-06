@@ -9,22 +9,26 @@ catalog: 	 true
 tags:
     - Gitalk
     - Blog
+
 ---
 
 
 
-> 这两天学习了 [BY](https://github.com/qiubaiying/qiubaiying.github.io) 的教程搭建了自己的博客，申请使用了`Gitalk`的评论功能，关于`Gitalk`的使用和配置大家可以参考别的教程，这里主要记录一个困扰我一晚上的问题——Error: Not Found。  这个👇是错误截图：
+这两天学习了 [BY](https://github.com/qiubaiying/qiubaiying.github.io) 的教程搭建了自己的博客，申请使用了`Gitalk`的评论功能，关于`Gitalk`的使用和配置大家可以参考别的教程，这里主要记录一个困扰我一晚上的问题——Error: Not Found.
 
-![200805_gitalk1](../post_pic/200805_gitalk1-1596692089338.png)
+
+这个👇是错误截图
+
+![200805_gitalk1](post_pic/200805_gitalk1.png)
 
 
 ### 解决方案
 
 #### 1. 新建存放评论的仓库
 
-**新建一个仓库**
+##### 新建一个仓库
 
-**启用Setting>Features>issues**
+##### 启用Setting>Features>issues
 
 #### 2. *_config.yaml* 的配置 
 
@@ -32,7 +36,7 @@ tags:
 
 这个👇是 *`config.yaml`*的配置信息
 
-![200805_gitalk2](post_pic/200805_gitalk2-1596691625959.png)
+![200805_gitalk2](post_pic/200805_gitalk2.png)
 
 
 :ballot_box_with_check:**clientID** 和 **clientSecret**是OAuth Apps 申请时生成的（下面还会提到）
@@ -55,11 +59,11 @@ tags:
 
 虽然不再显示`Error:Not Found`,但是显示`未找到相关的 Issues 进行评论` 👇 ，一点登录就会一直加载
 
-![200805_gitalk3](../post_pic/200805_gitalk3-1596692089339.png)
+![200805_gitalk3](post_pic/200805_gitalk3.png)
 
 然后各种检查配置，测试。后来又搜到了一篇[博客](https://blog.csdn.net/qing_gee/article/details/100133060) ，发现可能是OAuth配置的问题。
 
-![200805_gitalk4](../post_pic/200805_gitalk4-1596692089340.png)
+![200805_gitalk4](post_pic/200805_gitalk4.png)
 
 :ballot_box_with_check:Application name 自己新建一个名字即可
 
@@ -71,4 +75,4 @@ tags:
 
 :cherry_blossom::cherry_blossom::cherry_blossom::happy::happy::happy:
 
-![200805_gitalk5](../post_pic/200805_gitalk5-1596692089340.png)
+![200805_gitalk5](post_pic/200805_gitalk5.png)
