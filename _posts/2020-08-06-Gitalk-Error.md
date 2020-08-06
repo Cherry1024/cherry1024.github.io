@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Gitalk Error
+title:         Gitalk Error
 subtitle:   Gitalk Error: No Found问题解决
-date:       2020-08-06
-author:     CY
+date:        2020-08-06
+author:    CY
 header-img: img/post-bg-ios9-web.jpg
 catalog: 	 true
 tags:
