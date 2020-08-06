@@ -1,14 +1,14 @@
 ---
-layout:     post
-title:      Gitalk Error: No Found
-subtitle:   在博客里使用Gitalk遇到的一些问题
-date:       2020-08-06
-author:     CY
-header-img: img/post-bg-ios9-web.jpg
-catalog: 	 true
-tags:
+layout:     post   				# 使用的布局（不需要改）
+title:      Gitalk Error: Not Found		# 标题 
+subtitle:   Hello World, Hello Blog 		#副标题
+date:       2020-08-06 				# 时间
+author:     CY 					# 作者
+header-img: img/post-bg-2015.jpg 		#这篇文章标题背景图片
+catalog: true 					# 是否归档
+tags:						#标签
     - Gitalk
-	- Blog
+    - Blog
 ---
 
 > 这两天学习了 [BY]('https://github.com/qiubaiying/qiubaiying.github.io') 的教程搭建了自己的博客，申请使用了`Gitalk`的评论功能，关于`Gitalk`的使用和配置大家可以参考别的教程，这里主要记录一个困扰我一晚上的问题——Error: Not Found.
@@ -42,11 +42,11 @@ _这个👇是 *`config.yaml`*的配置信息
 ![](../post_pic/post1_2.png)
 
 
-:ballot_box_with_check:**clientID** 和 **clientSecret**是OAuth Apps 申请时生成的（下面还会提到）
+📕 **clientID** 和 **clientSecret**是OAuth Apps 申请时生成的（下面还会提到）
 
-:ballot_box_with_check:**ower**和**admin**都写GitHub用户名即可，如果admin有多个管理者，就以数组形式
+📕 **ower**和**admin**都写GitHub用户名即可，如果admin有多个管理者，就以数组形式
 
-:ballot_box_with_check:**repo** 这里直接写存储评论的远端仓库名称即可，之前看很多文档说要写仓库地址之类的，比如：xx.github.io 或者 github.com/xx/xx/github.io 等，但我这里都不work，页面刷新出来依旧会报错或者无法加载。这里参考了一条[issue]('https://github.com/gitalk/gitalk/issues/379') ，**原理**应该是：
+📕 **repo** 这里直接写存储评论的远端仓库名称即可，之前看很多文档说要写仓库地址之类的，比如：xx.github.io 或者 github.com/xx/xx/github.io 等，但我这里都不work，页面刷新出来依旧会报错或者无法加载。这里参考了一条[issue]('https://github.com/gitalk/gitalk/issues/379') ，**原理**应该是：
 
 > owner和repo组成的这个地址 github.com/owner/repo 是放置评论的仓库，因此不需要写完整地址，
 
@@ -68,14 +68,13 @@ _这个👇是 *`config.yaml`*的配置信息
 
 ![](../post_pic/post1_6.png)
 
-:ballot_box_with_check:Application name 自己新建一个名字即可
+📕 Application name 自己新建一个名字即可
 
-:ballot_box_with_check:Authorization callback URL 是博客的域名，如果你指向了新的域名，那就写新的域名，但我目前还没有申请，所以直接用的仓库名字
+📕 Authorization callback URL 是博客的域名，如果你指向了新的域名，那就写新的域名，但我目前还没有申请，所以直接用的仓库名字
 
-:ballot_box_with_check:Homepage URL 必须是博客仓库的域名（GitHub Pages 的），我之前写的是和Authorization callback URL一样的，就会出现上面说的错误，然后改成现在的就work了。
+📕 Homepage URL 必须是博客仓库的域名（GitHub Pages 的），我之前写的是和Authorization callback URL一样的，就会出现上面说的错误，然后改成现在的就work了。
 
 
-
-:cherry_blossom::cherry_blossom::cherry_blossom::happy::happy::happy:
+😊😊😊 DONE!
 
 ![](../post_pic/post1_7.png)
