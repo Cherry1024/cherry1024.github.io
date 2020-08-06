@@ -14,9 +14,10 @@ tags:
 > 这两天学习了 [BY]('https://github.com/qiubaiying/qiubaiying.github.io') 的教程搭建了自己的博客，申请使用了`Gitalk`的评论功能，关于`Gitalk`的使用和配置大家可以参考别的教程，这里主要记录一个困扰我一晚上的问题——Error: Not Found.
 
 
-
 这个👇是错误截图
-![错误截图](2020-08-05-Gittalk Error Not Found.assets/20190829103829450.png)
+
+![](../post_pic/post1_1.png)
+
 
 ### 解决方案
 
@@ -24,11 +25,11 @@ tags:
 
 ##### 新建一个仓库
 
-![image-20200806095148519](2020-08-05-Gittalk Error Not Found.assets/image-20200806095148519.png)
+![](../post_pic/post1_3.png)
 
 ##### 启用Setting>Features>issues
 
-![image-20200806095305028](2020-08-05-Gittalk Error Not Found.assets/image-20200806095305028.png)
+![](../post_pic/post1_4.png)
 
 
 
@@ -37,7 +38,9 @@ tags:
 > 我遇到的第一个坑 :baby:
 
 _这个👇是 *`config.yaml`*的配置信息
-![image-20200806094514925](2020-08-05-Gittalk Error Not Found.assets/image-20200806094514925.png)
+
+![](../post_pic/post1_2.png)
+
 
 :ballot_box_with_check:**clientID** 和 **clientSecret**是OAuth Apps 申请时生成的（下面还会提到）
 
@@ -59,11 +62,11 @@ _这个👇是 *`config.yaml`*的配置信息
 
 虽然不再显示`Error:Not Found`,但是显示`未找到相关的 Issues 进行评论` 👇 ，一点登录就会一直加载
 
-![image-20200806101712115](2020-08-05-Gittalk Error Not Found.assets/image-20200806101712115.png)
+![](../post_pic/post1_5.png)
 
 然后各种检查配置，测试。后来又搜到了一篇[博客]('https://blog.csdn.net/qing_gee/article/details/100133060') ，发现可能是OAuth配置的问题。
 
-![image-20200806103207055](2020-08-05-Gittalk Error Not Found.assets/image-20200806103207055.png)
+![](../post_pic/post1_6.png)
 
 :ballot_box_with_check:Application name 自己新建一个名字即可
 
@@ -75,5 +78,4 @@ _这个👇是 *`config.yaml`*的配置信息
 
 :cherry_blossom::cherry_blossom::cherry_blossom::happy::happy::happy:
 
-![image-20200806103813958](2020-08-05-Gittalk Error Not Found.assets/image-20200806103813958.png)
-
+![](../post_pic/post1_7.png)
