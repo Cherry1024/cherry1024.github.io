@@ -5,13 +5,13 @@ header-img:  img/post-bg-rabbit.jpg
 email: 826284647@qq.com
 description: "Just do what you want to do!"
 keyword: "CY, CY Blog, Cherry, CS, Deep Learning, Federated Learning"
-url: "http://cherry1024.github.io"          # your host, for absolute URL
+url: "https://cherry1024.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/Cherry1024/cherry1024.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "I am a slow walker, but i never walk backwards."
+sidebar-about-description: "I am a slow walker <br> but i never walk backwards."
 sidebar-avatar: /img/mypic.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
