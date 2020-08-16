@@ -29,7 +29,7 @@ github_username:    cherry1024
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
+# highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
@@ -65,7 +65,7 @@ gitalk:
   owner: Cherry1024   #github用户名，和repo组成仓库
   admin: Cherry1024
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
-  id: location.pathname
+ # id: location.pathname
 
 # 统计
 
