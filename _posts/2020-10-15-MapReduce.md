@@ -8,7 +8,9 @@ header-img: img/post-bg-food3.jpg
 catalog: 	 true
 tags:
     - Big Data
+    - Map Reduce
 ---
+
 
 
 ## 简介
@@ -33,7 +35,7 @@ MapReduce 模型主要分为 2 个部分：**Map** 和 **Reduce**（都是用户
 
 在 Map 过程中，Map 函数会获取输入的数据，产生一个临时中间值，它是一个 Key/Value 对，然后MapReduce Library 会按 Key 值给键值对（K/V）分组然后传递给 Reduce 函数。而后，Reduce 接收到了这些 K/V 对，会将它们合并。
 
-<img src="/Users/cherry/Library/Application Support/typora-user-images/image-20201015144338374.png" alt="image-20201015144338374" style="zoom: 25%;" />
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gjqefnm8whj310b0u0k02.jpg" alt="image-20201015144338374" style="zoom: 25%;" />
 
 1. 由用户程序中调用的 MapReduce Library 将文件分成 M 块（M 要远大于 Map Worker 的数量，每块大小16MB~64MB），然后用户程序在一组机器集群上创建大量的程序副本，fork出多个子进程。此时，进入 MapReduce 过程
 2. 程序副本中有一个Master程序和多个Worker程序，Master程序负责给空闲的Worker分配任务（M个Map任务和R个Reduce任务，M+R >> Machines.num）
@@ -45,9 +47,9 @@ MapReduce 模型主要分为 2 个部分：**Map** 和 **Reduce**（都是用户
 
 成功完成任务后，MapReduce的输出存放在R个输出文件中，一般不做合并，而这些文件往往又被作为另外一个MapReduce的输入
 
-![image-20201015150738644](/Users/cherry/Library/Application Support/typora-user-images/image-20201015150738644.png)
+![image-20201015150738644](https://tva1.sinaimg.cn/large/007S8ZIlly1gjqefsyjoyj311a0jwdo1.jpg)
 
-![image-20201015181532591](/Users/cherry/Library/Application Support/typora-user-images/image-20201015181532591.png)
+![image-20201015181532591](https://tva1.sinaimg.cn/large/007S8ZIlly1gjqefw90oaj30ni0boq9d.jpg)
 
 ### Master 
 
