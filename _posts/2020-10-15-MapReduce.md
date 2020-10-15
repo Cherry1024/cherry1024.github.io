@@ -1,16 +1,15 @@
 ---
 layout:     post
-title:      MapReduce: Simplified Data Processing on Large Clusters
-subtitle:  大数据领域经典programming model，作为读书笔记记录下来
+title:      MapReduce
+subtitle:   数据领域经典programming model——MapReduce: Simplified Data Processing on Large Clusters
 date:       2020-10-15
 author:     CY
 header-img: img/post-bg-food3.jpg
 catalog: 	 true
+mathjax:       true
 tags:
-    - Big Data
-    - Map Reduce
+    - BigData
 ---
-
 
 
 ## 简介
