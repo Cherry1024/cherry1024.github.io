@@ -6,7 +6,6 @@ date:       2020-10-15
 author:     CY
 header-img: img/post-bg-food3.jpg
 catalog: 	 true
-mathjax:       true
 tags:
     - Big Data
     - MapReduce
